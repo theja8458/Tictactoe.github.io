@@ -26,19 +26,17 @@ const resetGame=()=>{
 boxes.forEach((box)=>{
    
     box.addEventListener("click", ()=>{
-        if(turnO){
-            box.classList.add("x");
-            box.innerText="O";
-            turnO= false;
-        }
-            else{
-            
-                box.innerText="X";
-                turnO=true;
-            }
-        box.disabled=true;
-
-        chekWinner();
+        if (turnO) {
+        box.innerText = "O";
+        box.classList.add("o");
+        turnO = false;
+    } else {
+        box.innerText = "X";
+        box.classList.add("x");
+        turnO = true;
+    }
+    box.disabled = true;
+    chekWinner();
     });
 
 });
@@ -52,6 +50,8 @@ const ensableBoxes=()=>{
     for(let box of boxes){
         box.disabled=false;
         box.innerText="";
+        box.classList.remove("x");
+        box.classList.remove("o");
     }
 }
 
