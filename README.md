@@ -2,6 +2,8 @@
 
 A simple tic tac toe game made with HTML, CSS and JavaScript.
 
+**Live Demo:** https://theja8458.github.io/Tictactoe.github.io/
+
 ## How to Play
 
 1. Player O goes first
