@@ -33,4 +33,4 @@ Just open `index.html` in your browser.
 
 - X is red
 - O is blue
-- Background is teal
+- Background is teal....
